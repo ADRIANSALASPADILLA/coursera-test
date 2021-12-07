@@ -1,71 +1,72 @@
-</!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
-<head>
-	<title>Prueba técnica</title>
-</head>
-<link rel="shortcut icon" href="#">
-<style type="text/css">
-	
-	th, td{
-		border: 1px solid black;
-		
-	}
+    <head>
+        <title>Prueba técnica</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            
+            .container{overflow: hidden}
+            .tab{float: left;}
+            .tab-2{margin-left: 50px}
+            .tab-2 input{display: block;margin-bottom: 10px}
+            tr{transition:all .25s ease-in-out}
+            tr:hover{background-color:#EEE;cursor: pointer}
+            
+        </style>
+        
+    </head>
+    <body>
+        <h1>Prueba técnica</h1>
+        <div class="container">
+            <div class="tab tab-1">
+                <table id="table" border="1" >
+                    <tr>
+                            <th>Index</th>
+                            <th>Cod. Art</th>
+                            <th>Nombre Art.</th>
+                            <th>Desc. Art.</th>
+                            <th>Cant. Art.</th>
+                    </tr>
+                    <tr>
+                            <td>1</td>
+                            <td>ART001</td>
+                            <td>Detergente</td>
+                            <td>Descripción</td>
+                            <td>3</td>
+                  </tr>
+                  <tr>
+                            <td>2</td>
+                            <td>ART002</td>
+                            <td>Comida enlatada</td>
+                            <td>Descripción</td>
+                            <td>4</td>
+                  </tr>
+                  <tr>
+                            <td>3</td>
+                            <td>ART003</td>
+                            <td>Jabón</td>
+                            <td>Descripción</td>
+                            <td>5</td>
+                  </tr>
+                </table>
+            </div>
+            <div class="tab tab-2">
+                INDEX :<input type="number" name="INDEX" id="INDEX">
+                CODE :<input type="text" name="CODE" id="CODE">
+                NAME :<input type="text" name="NAME" id="NAME">
+                DESC :<input type="text" name="DESC" id="DESC">
+                CANT :<input type="number" name="CANT" id="CANT">
+                
+                <button onclick="addHtmlTableRow();">Add</button>
+                <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button onclick="removeSelectedRow();">Remove</button>
+            </div>
+        </div>
+        
 
-	th, td {
-		padding: 10px;
-	}
+    <script src="js/script.js"></script>
 
-	th {
-		text-align: : center;
-	}
-
-
-</style>
-<body>
-
-<h1>Prueba técnica</h1>
-<button onclick = "gotoinsertar();">Insertar artículo</button>
-<button onclick = "gotomodificar();">Modificar artículo</button>
-<button onclick = "gotoeliminar();">Eliminar artículo</button>
-
-
-<table id="tablon" style="width: 100%" >
-  <tr>
-    <th>Index</th>
-    <th>Cod. Art</th>
-    <th>Nombre Art.</th>
-    <th>Desc. Art.</th>
-    <th>Cant. Art.</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>ART001</td>
-    <td>Soleado</td>
-    <td>Soleado</td>
-    <td>Soleado</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>ART002</td>
-    <td>Soleado</td>
-    <td>Soleado</td>
-    <td>Soleado</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>ART003</td>
-    <td>Soleado</td>
-    <td>Soleado</td>
-    <td>Soleado</td>
-  </tr>
-</table>
-
-<p> </p>
-
-<button onclick = "change();">Realizar Cambio</button>
-
-
-
-<script src="js/script.js"></script>
-</body>
+    </body>
 </html>
