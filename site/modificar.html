@@ -3,9 +3,10 @@
 <head>
 	<title>MODIFICAR ARTICULO</title>
 </head>
+<link rel="shortcut icon" href="#">
 <style type="text/css">
 	
-	h2, th, td,a {
+	h2, th, td, a {
 		border: 1px solid black;
 		border-collapse: collapse;
 	}
@@ -24,11 +25,30 @@
 
 <h1>MODIFICAR ARTICULO</h1>
 
-<h2>ONICHAN</h2>
+<form method="get" action="index.html">
+  <label for="iname">Nombre: </label><br>
+  <input id="iname" type="text" name="nomart">
+  <br><br>
+  <label for="icode">Código: </label><br>
+  <input id="icode" type="text" name="codart">
+  <br><br>
+  <label for="idescription">Descripción: </label><br>
+  <input id="idescription" type="text" name="desart">
+  <br><br>
+  <label for="iamount">Cantidad: </label><br>
+  <input id="iamount" type="text" name="cantart">
+  <br><br>
+  <button type="button" onclick="mdatos();">Enviar</button>
+</form>
 
-<a href="index.html">ENVIAR</a>
 
 
 
+
+<button onclick = "gotoindex();">Volver a la página principal</button>
+
+
+<script src="js/script.js"></script>
 </body>
 </html>
+

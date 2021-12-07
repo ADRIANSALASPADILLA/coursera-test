@@ -3,9 +3,10 @@
 <head>
 	<title>Prueba técnica</title>
 </head>
+<link rel="shortcut icon" href="#">
 <style type="text/css">
 	
-	table, th, td, a {
+	th, td{
 		border: 1px solid black;
 		
 	}
@@ -23,8 +24,12 @@
 <body>
 
 <h1>Prueba técnica</h1>
+<button onclick = "gotoinsertar();">Insertar artículo</button>
+<button onclick = "gotomodificar();">Modificar artículo</button>
+<button onclick = "gotoeliminar();">Eliminar artículo</button>
 
-<table style="width: 100%">
+
+<table id="tablon" style="width: 100%" >
   <tr>
     <th>Index</th>
     <th>Cod. Art</th>
@@ -33,22 +38,22 @@
     <th>Cant. Art.</th>
   </tr>
   <tr>
-    <td>Soleado</td>
-    <td>Soleado</td>
-    <td>Soleado</td>
-    <td>Soleado</td>
-    <td>Soleado</td>
-  </tr>
-  <tr>
-    <td>Soleado</td>
-    <td>Soleado</td>
+    <td>1</td>
+    <td>ART001</td>
     <td>Soleado</td>
     <td>Soleado</td>
     <td>Soleado</td>
   </tr>
   <tr>
+    <td>2</td>
+    <td>ART002</td>
     <td>Soleado</td>
     <td>Soleado</td>
+    <td>Soleado</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>ART003</td>
     <td>Soleado</td>
     <td>Soleado</td>
     <td>Soleado</td>
@@ -56,13 +61,11 @@
 </table>
 
 <p> </p>
-<p> </p>
-<p> </p>
-<a href="insertar.html">Insertar artículo</a>
-<p> </p>
-<a href="modificar.html">Modificar artículo</a>
-<p> </p>
-<a href="eliminar.html">Eliminar artículo</a>
 
+<button onclick = "change();">Realizar Cambio</button>
+
+
+
+<script src="js/script.js"></script>
 </body>
 </html>

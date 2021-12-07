@@ -3,6 +3,7 @@
 <head>
 	<title>ELIMINAR ARTICULO</title>
 </head>
+<link rel="shortcut icon" href="#">
 <style type="text/css">
 	
 	h2, th, td, a {
@@ -24,11 +25,22 @@
 
 <h1>ELIMINAR ARTICULO</h1>
 
-<h2>ONICHAN</h2>
+<form method="get" action="index.html">
 
-<a href="index.html">ENVIAR</a>
+  <label for="icode">Código: </label><br>
+  <input id="icode" type="text" name="codart">
+  <br><br>
+  <button type="button" onclick="edatos();">Enviar</button>
+</form>
 
 
 
+
+
+<button onclick = "gotoindex();">Volver a la página principal</button>
+
+
+<script src="js/script.js"></script>
 </body>
 </html>
+
